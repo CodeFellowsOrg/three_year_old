@@ -1,5 +1,7 @@
 ThreeYearOldRails3::Application.routes.draw do
 
+  devise_for :users
+
   resources :questions
   # The priority is based upon order of creation:
   # first created -> highest priority.

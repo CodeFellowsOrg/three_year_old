@@ -1,2 +1,7 @@
-Welcome to Three Year Old Questions
+<h1>Welcome to Three Year Old Questions</h1>
+<ul>
+  <% @questions.each do |question| %>
+    <li><%= question.name %> : <%= question.answer %></li>
+  <% end %>
+</ul>
 <%= render "form" %>
